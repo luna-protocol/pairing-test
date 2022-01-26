@@ -14,12 +14,7 @@ func main() {
 
 	output := os.Stdout
 
-	scraper := scraper.Scraper{
-		BaseURL: *baseURL,
-		Output:  output,
-	}
-
-	if err := scraper.Run(); err != nil {
+	if err := scraper.Run(*baseURL, output); err != nil {
 		log.Fatal(err)
 	}
 }

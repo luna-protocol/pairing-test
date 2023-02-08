@@ -20,7 +20,6 @@ The crawler should:
 
 - Use `https://crawler-test.com` as the base domain
 - Feel free to rearrange as you like! The only requirement is the CLI interface.
-- Whether we use concurrency is up to you! But explain your reasoning.
 - Try and avoid libraries. `npm install webcrawler` is not a valid solution!
 
 ##  Running the repos

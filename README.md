@@ -10,11 +10,12 @@ We'll be working together to write a simple web crawler in a language of your ch
 
 The crawler should:
 
-- Start with from a single URL
-- Make a HTTP Get request to that URL to retrieve the HTML
-- Parse the HTML to find links within the page (we've written this code for you).
-- Recursively visit all of the found links, **but only if they are within the same domain**
-- Print a list of all found links to the output stream
+1. Start with from a single URL
+2. Make a HTTP Get request to that URL to retrieve the HTML
+3. Parse the HTML to find links within the page (we've written this code for you).
+4. Keep repeating steps 2. and 3. for all of the found links **but only if they are within the same domain** until you've visited every page on the website. 
+    - For example: ['/home', 'https://crawler-test.com/v1/done', 'https://google.com'] you'd visit the first two links. 
+5. Print a list of all the links within the site to the terminal.
 
 ## Tips
 
